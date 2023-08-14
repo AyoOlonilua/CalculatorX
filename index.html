@@ -6,27 +6,56 @@
     <script src="js/jquery-3.7.0.js"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <title>CalculatorX</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Calculator</h1>
-    <form id="add">
-      <div class="form-group">
-        <label for="add1">1st number:</label>
-        <input id="add1" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="add2">2nd number:</label>
-        <input id="add2" class="form-control" type="text">
-      </div>
-      <button type="submit" class="btn">Add!</button>
+  <div class="container p-5 text-center mt-5">
+    <h2 class="text-white">CALCULATOR X</h2>
+
+    <form action="" name="forms">
+        <div class="calc p-3 w-50 border border-white container">
+          <input class="bg-white mt-1 container font-weight-bold" type="text" name="screen" id="result">
+
+          <div class="w-100 p-1 container">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="1" onclick="forms.screen.value+='1'">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="2" onclick="forms.screen.value+='2'">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="3" onclick="forms.screen.value+='3'">
+          </div>
+
+          <div class="w-100 p-1 container">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="4" onclick="forms.screen.value+='4'">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="5" onclick="forms.screen.value+='5'">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="6" onclick="forms.screen.value+='6'">
+          </div>
+
+          <div class="w-100 p-1 container">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="7" onclick="forms.screen.value+='7'">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="8" onclick="forms.screen.value+='8'">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="9" onclick="forms.screen.value+='9'">
+          </div>
+
+          <div class="w-100 p-1 container">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="." onclick="forms.screen.value+='.'">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="0" onclick="forms.screen.value+='0'">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="/" onclick="forms.screen.value+='/'">
+          </div>
+
+          <div class="w-100 p-1 container">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="*" onclick="forms.screen.value+='*'">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="-" onclick="forms.screen.value+='-'">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="+" onclick="forms.screen.value+='+'">
+          </div>
+
+          <div class="w-100 p-1 container">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="AC" onclick="forms.screen.value =''">
+            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="=" onclick="forms.screen.value= eval(forms.screen.value)">
+            <!-- <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="CLEAR" onclick="form.value= backspace()"> -->
+          </div>
+        </div>
+
     </form>
-    <div id="output">
+</div>
 
-    </div>
-  </div>
-
-  
 </body>
 </html>

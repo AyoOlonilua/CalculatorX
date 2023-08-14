@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-image: url(/img/hero.jpg);
+    background-size: cover;
+}
+.container {
+    text-align: center;
+   }
+#result {
+   width: 470px;
+   font-size: 40px;
+   font-weight: bolder;
+   border-radius: 13px;
+   height: 75px;
+}
+.calc {
+   background-color: black;
+   display: inline-block;
+   border-radius: 20px;
+}
+input {
+   font-size: 60px;
+   width: 30px;
+   height: 60px;
+   margin: 5px;
+   border-radius: 10px;
+   border: black;
+}
