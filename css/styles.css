@@ -22,3 +22,11 @@ body {
    display: inline-block;
    border-radius: 20px;
 }
+input {
+   font-size: 60px;
+   width: 30px;
+   height: 60px;
+   margin: 5px;
+   border-radius: 10px;
+   border: black;
+}
