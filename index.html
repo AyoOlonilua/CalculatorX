@@ -13,48 +13,48 @@
   <div class="container p-5 text-center mt-5">
     <h2 class="text-white">CALCULATOR X</h2>
 
-    <form action="" name="forms">
-        <div class="calc p-3 w-50 border border-white container">
-          <input class="bg-white mt-1 container font-weight-bold" type="text" name="screen" id="result">
-
-          <div class="w-100 p-1 container">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="1" onclick="forms.screen.value+='1'">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="2" onclick="forms.screen.value+='2'">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="3" onclick="forms.screen.value+='3'">
+    <section class="container">
+      <form action="" name="forms">
+          <div class="calc container calc p-3 w-100 border border-white">
+            <input class="bg-white mt-1 w-100 container font-weight-bold" type="text" name="screen" id="result">
+  
+            <div class="w-100 p-1 container">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="1" onclick="forms.screen.value+='1'">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="2" onclick="forms.screen.value+='2'">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="3" onclick="forms.screen.value+='3'">
+            </div>
+  
+            <div class="w-100 p-1 container">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="4" onclick="forms.screen.value+='4'">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="5" onclick="forms.screen.value+='5'">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="6" onclick="forms.screen.value+='6'">
+            </div>
+  
+            <div class="w-100 p-1 container">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="7" onclick="forms.screen.value+='7'">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="8" onclick="forms.screen.value+='8'">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="9" onclick="forms.screen.value+='9'">
+            </div>
+  
+            <div class="w-100 p-1 container">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="." onclick="forms.screen.value+='.'">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="0" onclick="forms.screen.value+='0'">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="/" onclick="forms.screen.value+='/'">
+            </div>
+  
+            <div class="w-100 p-1 container">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="*" onclick="forms.screen.value+='*'">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="-" onclick="forms.screen.value+='-'">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="+" onclick="forms.screen.value+='+'">
+            </div>
+  
+            <div class="w-100 p-1 container">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="AC" onclick="forms.screen.value =''">
+              <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="=" onclick="forms.screen.value= eval(forms.screen.value)">
+            </div>
           </div>
-
-          <div class="w-100 p-1 container">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="4" onclick="forms.screen.value+='4'">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="5" onclick="forms.screen.value+='5'">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="6" onclick="forms.screen.value+='6'">
-          </div>
-
-          <div class="w-100 p-1 container">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="7" onclick="forms.screen.value+='7'">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="8" onclick="forms.screen.value+='8'">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="9" onclick="forms.screen.value+='9'">
-          </div>
-
-          <div class="w-100 p-1 container">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="." onclick="forms.screen.value+='.'">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="0" onclick="forms.screen.value+='0'">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="/" onclick="forms.screen.value+='/'">
-          </div>
-
-          <div class="w-100 p-1 container">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="*" onclick="forms.screen.value+='*'">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="-" onclick="forms.screen.value+='-'">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="+" onclick="forms.screen.value+='+'">
-          </div>
-
-          <div class="w-100 p-1 container">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="AC" onclick="forms.screen.value =''">
-            <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="=" onclick="forms.screen.value= eval(forms.screen.value)">
-            <!-- <input class="w-25 bg-white mt-1 container font-weight-bold" type="button" value="CLEAR" onclick="form.value= backspace()"> -->
-          </div>
-        </div>
-
-    </form>
+       </form>
+      </section>
 </div>
 
 </body>
